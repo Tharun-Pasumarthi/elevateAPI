@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info Fetcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>User Info</h1>
+    <form id="addUserForm" class="user-form">
+        <h2>Add User</h2>
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="street" placeholder="Street" required />
+        <input type="text" id="suite" placeholder="Suite" required />
+        <input type="text" id="city" placeholder="City" required />
+        <input type="text" id="zipcode" placeholder="Zipcode" required />
+        <button type="submit">Add User</button>
+    </form>
+    <button id="reloadBtn">Reload Users</button>
+    <div id="loading" style="display:none">
+        <div class="spinner"></div>
+        <div>Loading users...</div>
+    </div>
+    <div id="userContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
